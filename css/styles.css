@@ -1,0 +1,73 @@
+/*selector universal*/
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+/*estilos del body*/
+main{
+    background-color: azure;
+}
+header{
+    background-color: aqua;
+    height: 100px;
+    display: flex;
+    justify-content: center;
+
+}
+.navegacionHeader{
+    padding-top: 30px;
+    justify-content: space-around;
+}
+.listaNavegacion{
+    list-style: none;
+    flex-direction: row;
+}
+.linkNav{
+    text-decoration: none;
+    color: black;
+    font-size: 20px;
+    padding:15px;
+}
+body{
+    /* height: 100vh; */
+}
+.section1{
+    padding-top:20px;
+}
+
+.galeriaPadre{
+    display:grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+}
+/*
+.galeriaPadre{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+}
+.Card_hijo{
+    display: flex;
+    flex-direction:column;
+    justify-content:center;
+    align-items: center;
+}*/
+.Card_hijo img{
+    width: 80%;
+    height: 80%;
+    object-fit: cover;
+
+}
+footer{
+    background-color: cornflowerblue;
+    height: auto;
+}
+
+@media screen and (max-width: 768px) {
+    .galeriaPadre{
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(2,auto);
+    }
+}
